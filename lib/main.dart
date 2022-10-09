@@ -3,6 +3,9 @@ import 'package:travel_app/modules/HomeScreen.dart';
 import 'package:travel_app/modules/LoginScreen.dart';
 import 'package:travel_app/modules/countery.dart';
 import 'package:travel_app/modules/mainHomeScreen.dart';
+import 'package:travel_app/modules/project.dart';
+import 'package:travel_app/modules/project2.dart';
+import 'package:travel_app/modules/project3.dart';
 import 'package:travel_app/modules/start_screen.dart';
 import 'package:travel_app/modules/tourism.dart';
 
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainHomeScreen(),
+      home: project3(),
     );
   }
 }
