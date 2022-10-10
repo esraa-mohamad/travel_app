@@ -10,14 +10,14 @@ class TourismScreen extends  StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration:  BoxDecoration(
           image: DecorationImage(
             image: const AssetImage(
                 'assets/images/castle.jpg',
             ),
-            colorFilter:ColorFilter.mode(Colors.black.withOpacity(0.3), BlendMode.dstATop) ,
+            colorFilter:ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.colorBurn) ,
             fit: BoxFit.cover,
-          )
+          ),
         ),
         child: SingleChildScrollView(
           child: Padding(
