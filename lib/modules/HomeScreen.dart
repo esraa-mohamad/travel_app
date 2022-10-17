@@ -1,12 +1,31 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:travel_app/modules/start_screen.dart';
 
 import '../componants/componants.dart';
 
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading:  IconButton(
+            onPressed: (){
+              Navigator.pop(context);
+            },
+            icon:const Icon(Icons.arrow_back_ios,color: Colors.orangeAccent,)),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -17,8 +36,7 @@ class HomeScreen extends StatelessWidget {
               ),
               Row(
                 children: [
-                  IconButton(onPressed: (){}, icon:const Icon(Icons.arrow_back_ios,color: Colors.orangeAccent,)),
-                 const  SizedBox(width: 60.0),
+                 const  SizedBox(width: 85.0),
                   Container(
                     height: 70.0,
                     width: 4.0,
@@ -45,7 +63,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 15.0,
               ),
-              ClipRRect(child:Image.asset('assets/images/place1.jpg'),borderRadius: BorderRadius.circular(7),),
+              ClipRRect(borderRadius: BorderRadius.circular(7),child:Image.asset('assets/images/place1.jpg'),),
               const SizedBox(
                 height: 15.0,
               ),
@@ -90,6 +108,12 @@ class HomeScreen extends StatelessWidget {
                     ),)),
                     defaulttButton(
                       icon: Icons.arrow_forward,width: 100.0,
+                      function: ()
+                        {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context)=>const StartScreen()),
+                          );
+                        }
                     )
                   ],
                 ),

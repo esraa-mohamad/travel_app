@@ -55,32 +55,6 @@ Widget defaulttButton({
         child: Icon(icon),
       ),
     );
-Widget defaultoButton({
-  double? width = double.infinity,
-  Color? background = Colors.orangeAccent,
-  Function? function,
-  String? text,
-  bool isUpper = true,
-  double radius = 13.0,
-  IconData? icon,
-}) =>
-    Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(radius),
-        color: background,
-      ),
-      width: width,
-      child: MaterialButton(
-        onPressed: () {
-          function!();
-        },
-        child: Text(
-          text!,
-          style: const TextStyle(fontSize: 20, color: Colors.white),
-        ),
-      ),
-    );
-
 Widget defaultFormFieldo({
   required TextEditingController control,
   Function? onsubmitt,
@@ -93,6 +67,7 @@ Widget defaultFormFieldo({
   IconData? suffix,
   Function? suffixpres,
   Function? ontap,
+  required Function validate,
 }) =>
     Container(
       decoration: const BoxDecoration(
@@ -111,6 +86,10 @@ Widget defaultFormFieldo({
           ontap!();
         },
         obscureText: isPassword,
+        validator: (value)
+        {
+          return validate(value);
+        },
         decoration: InputDecoration(
           hintText:hint ,
           labelText: label,
@@ -126,6 +105,7 @@ Widget defaultFormFieldo({
         ),
       ),
     );
+// ignore: non_constant_identifier_names
 Widget PhotoShadowStyle()=>Container(
   decoration: BoxDecoration(
       gradient: LinearGradient(
@@ -138,6 +118,7 @@ Widget PhotoShadowStyle()=>Container(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter)),
 );
+// ignore: non_constant_identifier_names
 Widget PhotoShadowSmStyle()=>Container(
   decoration: BoxDecoration(
       gradient: LinearGradient(
@@ -153,6 +134,7 @@ Widget PhotoShadowSmStyle()=>Container(
   ),
 );
 
+// ignore: non_constant_identifier_names
 Widget PhotoShadowmnStyle()=>Container(
   decoration: BoxDecoration(
       gradient: LinearGradient(
@@ -164,4 +146,34 @@ Widget PhotoShadowmnStyle()=>Container(
           ],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter)),
+);
+
+// ignore: non_constant_identifier_names
+Widget ABC ({
+  required String abc,
+})=>Text(
+  abc,
+  style: const TextStyle(
+      fontSize: 18,
+      color: Colors.deepOrangeAccent
+  ),
+);
+
+Widget flag (
+{
+  required String imagePath,
+}
+    )=>Container(
+  width: 80,
+  height: 80,
+  decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(25),
+    color: Colors.orangeAccent,
+  ),
+  child: Padding(
+    padding: const EdgeInsets.all(5.0),
+    child: ClipRRect(
+        borderRadius: BorderRadius.circular(25),
+        child: Image.asset(imagePath)),
+  ),
 );

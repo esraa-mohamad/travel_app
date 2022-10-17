@@ -1,9 +1,8 @@
 import 'dart:math';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 
+// ignore: camel_case_types
 class project3 extends StatelessWidget {
   const project3({Key? key}) : super(key: key);
 
@@ -13,7 +12,7 @@ class project3 extends StatelessWidget {
       body: Stack(
         children:[
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/images/pyra.jpg"),
                 fit: BoxFit.cover,
@@ -43,24 +42,20 @@ class project3 extends StatelessWidget {
           ),
 
           Padding(
-            padding: EdgeInsets.only(top: 150, left:20),
-            child: Column(children: [
+            padding: const EdgeInsets.only(top: 150, left:20),
+            child: Column(children: const [
 
-              Container(
-                child: Text(
-                  'Welcome to',
-                  style: TextStyle(color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 50.0),
-                ),
+              Text(
+                'Welcome to',
+                style: TextStyle(color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 50.0),
               ),
-              Container(
-                child: Text(
-                  'you in egypt',
-                  style: TextStyle(color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 50.0),
-                ),
+              Text(
+                'you in egypt',
+                style: TextStyle(color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 50.0),
               ),
               SizedBox(height: 30.0,),
 
@@ -80,10 +75,10 @@ class project3 extends StatelessWidget {
               children: [
                 Transform.rotate(
                   angle: 270 * pi/180,
-                  child: Icon(Icons.double_arrow_sharp,color: Colors.white,size: 60.0,),
+                  child: const Icon(Icons.double_arrow_sharp,color: Colors.white,size: 60.0,),
 
                 ),
-                SizedBox(height: 30.0,),// Icon(Icons.double_arrow_sharp,transform: Matrix4.rotationY(math.pi), size: 40.0,color: Colors.white,),
+                const SizedBox(height: 30.0,),// Icon(Icons.double_arrow_sharp,transform: Matrix4.rotationY(math.pi), size: 40.0,color: Colors.white,),
                 // Icon(Icons.keyboard_arrow_up_outlined, size: 40.0,color: Colors.white,),
               ],
             ),

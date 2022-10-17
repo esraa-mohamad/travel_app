@@ -1,10 +1,13 @@
-import 'package:flutter/cupertino.dart';
+
+
 import 'package:flutter/material.dart';
 
 import '../componants/componants.dart';
 
 
 class MainHomeScreen extends StatelessWidget {
+  const MainHomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,7 +96,7 @@ class MainHomeScreen extends StatelessWidget {
                     const SizedBox(
                       height: 30.0,
                     ),
-                    Container(
+                    SizedBox(
                       height: 210.0,
                       child: ListView(
                         shrinkWrap: true,
@@ -409,102 +412,100 @@ class MainHomeScreen extends StatelessWidget {
                       height: 30.0,
                     ),
                     Expanded(
-                      child: Container(
-                        child: ListView(
-                          shrinkWrap: true,
-                          children: [
-                            SizedBox(
-                              width:double.infinity,
-                              height: 200,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: Stack(
-                                    children: [
-                                      Image.asset('assets/images/alex.jpeg',
-                                        fit: BoxFit.cover,width: double.infinity,height: 200,),
-                                      PhotoShadowmnStyle(),
-                                      const Padding(
-                                        padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                        child: Text('Alexanderia',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
-                                      ),
-                                    ]),
-                              ),
+                      child: ListView(
+                        shrinkWrap: true,
+                        children: [
+                          SizedBox(
+                            width:double.infinity,
+                            height: 200,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Stack(
+                                  children: [
+                                    Image.asset('assets/images/alex.jpeg',
+                                      fit: BoxFit.cover,width: double.infinity,height: 200,),
+                                    PhotoShadowmnStyle(),
+                                    const Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
+                                      child: Text('Alexanderia',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                    ),
+                                  ]),
                             ),
-                            const SizedBox(height: 10,),
-                            SizedBox(
-                              width:double.infinity,
-                              height: 200,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: Stack(
-                                    children: [
-                                      Image.asset('assets/images/matrouh.jpeg',
-                                        fit: BoxFit.cover,width: double.infinity,height: 200,),
-                                      PhotoShadowmnStyle(),
-                                      const Padding(
-                                        padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                        child: Text('Matrouh',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
-                                      ),
-                                    ]),
-                              ),
+                          ),
+                          const SizedBox(height: 10,),
+                          SizedBox(
+                            width:double.infinity,
+                            height: 200,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Stack(
+                                  children: [
+                                    Image.asset('assets/images/matrouh.jpeg',
+                                      fit: BoxFit.cover,width: double.infinity,height: 200,),
+                                    PhotoShadowmnStyle(),
+                                    const Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
+                                      child: Text('Matrouh',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                    ),
+                                  ]),
                             ),
-                            const SizedBox(height: 10,),
-                            SizedBox(
-                              width:double.infinity,
-                              height: 200,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: Stack(
-                                    children: [
-                                      Image.asset('assets/images/dahab.jpeg',
-                                        fit: BoxFit.cover,width: double.infinity,height: 200,),
-                                      PhotoShadowmnStyle(),
-                                      const Padding(
-                                        padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                        child: Text('Dahab',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
-                                      ),
-                                    ]),
-                              ),
+                          ),
+                          const SizedBox(height: 10,),
+                          SizedBox(
+                            width:double.infinity,
+                            height: 200,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Stack(
+                                  children: [
+                                    Image.asset('assets/images/dahab.jpeg',
+                                      fit: BoxFit.cover,width: double.infinity,height: 200,),
+                                    PhotoShadowmnStyle(),
+                                    const Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
+                                      child: Text('Dahab',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                    ),
+                                  ]),
                             ),
-                            const SizedBox(height: 10,),
-                            SizedBox(
-                              width:double.infinity,
-                              height: 200,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: Stack(
-                                    children: [
-                                      Image.asset('assets/images/khan.jpeg',
-                                        fit: BoxFit.cover,width: double.infinity,height: 200,),
-                                      PhotoShadowmnStyle(),
-                                      const Padding(
-                                        padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                        child: Text('Khan ElKhalely',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
-                                      ),
-                                    ]),
-                              ),
+                          ),
+                          const SizedBox(height: 10,),
+                          SizedBox(
+                            width:double.infinity,
+                            height: 200,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Stack(
+                                  children: [
+                                    Image.asset('assets/images/khan.jpeg',
+                                      fit: BoxFit.cover,width: double.infinity,height: 200,),
+                                    PhotoShadowmnStyle(),
+                                    const Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
+                                      child: Text('Khan ElKhalely',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                    ),
+                                  ]),
                             ),
-                            const SizedBox(height: 10,),
-                            SizedBox(
-                              width:double.infinity,
-                              height: 200,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: Stack(
-                                    children: [
-                                      Image.asset('assets/images/azharb.jpeg',
-                                        fit: BoxFit.cover,width: double.infinity,height: 200,),
-                                      PhotoShadowmnStyle(),
-                                      const Padding(
-                                        padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                        child: Text('AlAzhar Bark',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
-                                      ),
-                                    ]),
-                              ),
+                          ),
+                          const SizedBox(height: 10,),
+                          SizedBox(
+                            width:double.infinity,
+                            height: 200,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Stack(
+                                  children: [
+                                    Image.asset('assets/images/azharb.jpeg',
+                                      fit: BoxFit.cover,width: double.infinity,height: 200,),
+                                    PhotoShadowmnStyle(),
+                                    const Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
+                                      child: Text('AlAzhar Bark',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                    ),
+                                  ]),
                             ),
-                            const SizedBox(height: 10,),
-                          ],
-                        ),
+                          ),
+                          const SizedBox(height: 10,),
+                        ],
                       ),
                     ),
                   ],

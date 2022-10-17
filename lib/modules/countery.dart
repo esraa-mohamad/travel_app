@@ -299,7 +299,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                         border: Border.all(
+                           color:Colors.orangeAccent,
+                           width: 2,
+                         ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -316,7 +319,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -333,7 +339,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -350,7 +359,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -367,7 +379,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -384,7 +399,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -401,7 +419,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -418,7 +439,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -437,7 +461,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -454,7 +481,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -471,7 +501,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -488,7 +521,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -505,7 +541,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -522,7 +561,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -539,7 +581,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -556,7 +601,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -575,7 +623,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -592,7 +643,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -609,7 +663,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -626,7 +683,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -643,7 +703,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -660,7 +723,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -677,7 +743,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -694,7 +763,10 @@ class SelectCountry extends  StatelessWidget {
                         height: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
+                          border: Border.all(
+                            color:Colors.orangeAccent,
+                            width: 2,
+                          ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),

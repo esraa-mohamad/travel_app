@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/componants/componants.dart';
+import 'package:travel_app/modules/LoginScreen.dart';
+import 'package:travel_app/modules/project2.dart';
 
 class StartScreen extends  StatefulWidget {
   const StartScreen({Key? key}) : super(key: key);
@@ -12,6 +14,15 @@ class _StartScreenState extends State<StartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading:  IconButton(
+            onPressed: (){
+              Navigator.pop(context);
+            },
+            icon:const Icon(Icons.arrow_back_ios,color: Colors.orangeAccent,)),
+      ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Center(
@@ -20,19 +31,6 @@ class _StartScreenState extends State<StartScreen> {
             child: Column(
               children:
               [
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children:
-                  [
-                    const Icon(Icons.arrow_back_ios,
-                    color: Colors.orangeAccent,
-                    ),
-                    const SizedBox(
-                      width: 40,
-                    ),
-                    Image.asset('assets/images/photo.png'),
-                  ],
-                ),
                 Image.asset('assets/images/walking.png'),
                 const SizedBox(
                   height: 10,
@@ -91,7 +89,14 @@ class _StartScreenState extends State<StartScreen> {
                 defaultButton(
                     width: 200,
                     backGround: Colors.deepOrange,
-                    function: (){},
+                    function: ()
+                    {
+                      Navigator.push(context,
+                          MaterialPageRoute(
+                              builder: (context)=>const project2()
+                          ),
+                      );
+                    },
                     text: 'Sign Up',
                   colorText: Colors.white,
                   radius: 15,
@@ -100,14 +105,24 @@ class _StartScreenState extends State<StartScreen> {
                 const SizedBox(
                   height: 10,
                 ),
-                 const Text (
-                  'Log In',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.deepOrangeAccent,
-                    decoration: TextDecoration.underline
-                  ),
+                 GestureDetector(
+                   onTap: ()
+                   {
+                     Navigator.push(
+                         context, MaterialPageRoute(
+                         builder: (context)=>LoginScreenTravel()
+                     ),
+                     );
+                   },
+                   child: const Text (
+                    'Log In',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.deepOrangeAccent,
+                      decoration: TextDecoration.underline
+                    ),
                 ),
+                 ),
               ],
             ),
           ),

@@ -1,9 +1,17 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:travel_app/componants/componants.dart';
+import 'package:travel_app/modules/HomeScreen.dart';
 
-class project extends StatelessWidget {
+// ignore: camel_case_types
+class project extends StatefulWidget {
   const project({Key? key}) : super(key: key);
 
+  @override
+  State<project> createState() => _projectState();
+}
+
+// ignore: camel_case_types
+class _projectState extends State<project> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,9 +24,9 @@ class project extends StatelessWidget {
 
             children: [
               Image.asset('assets/images/clar.png', height: 350.0,width: 500.0,),
-              SizedBox(height: 50,),
+              const SizedBox(height: 50,),
 
-              Text(
+              const Text(
 
                 'Be the Reviewer and share with people your good experience of any place you visited',
                 textAlign: TextAlign.center,
@@ -36,46 +44,41 @@ class project extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      IconButton(onPressed: (){}, icon: Icon(Icons.circle,color: Colors.orange,size: 20.0,)),
+                      IconButton(onPressed: (){}, icon: const Icon(Icons.circle,color: Colors.orange,size: 20.0,)),
 
-                      SizedBox(width: 1.0,),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.circle_outlined,color: Colors.orange,size: 20.0,)),
-                      SizedBox(width: 1.0,),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.circle_outlined,color: Colors.orange,size: 20.0,)),
+                      const SizedBox(width: 1.0,),
+                      IconButton(onPressed: (){}, icon: const Icon(Icons.circle_outlined,color: Colors.orange,size: 20.0,)),
+                      const SizedBox(width: 1.0,),
+                      IconButton(onPressed: (){}, icon: const Icon(Icons.circle_outlined,color: Colors.orange,size: 20.0,)),
                     ],
                   ),
                 ),
               ),
-              SizedBox(height: 130.0,),
+              const SizedBox(height: 130.0,),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Skip',textAlign: TextAlign.start,
+                    const Text('Skip',textAlign: TextAlign.start,
 
-                      style:TextStyle(
+                      style: TextStyle(
                         decoration: TextDecoration.underline,
                         color: Colors.orange,
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold,
                       ) ,
                     ),
-                    SizedBox(width: 140.0,),
+                    const SizedBox(width: 140.0,),
 
-                    Container(
-                      decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.circular(20.0,),),
-                      padding: EdgeInsets.only(left: 10, right:10),
-
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.arrow_forward,
-                          color: Colors.white,
-
-                        ),
-                        onPressed: () {
-                        },
-                      ),
+                    defaulttButton(
+                        icon: Icons.arrow_forward,width: 100.0,
+                        function: ()
+                        {
+                          Navigator.push(context,
+                            MaterialPageRoute(builder: (context)=>const HomeScreen()),
+                          );
+                        }
                     ),
                   ],
                 ),
