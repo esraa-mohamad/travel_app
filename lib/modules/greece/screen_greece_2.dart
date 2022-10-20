@@ -1,12 +1,13 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:travel_app/modules/greece/screen_greece_3.dart';
 
-import '../componants/componants.dart';
+import '../../componants/componants.dart';
 
 
-class MainHomeScreen extends StatelessWidget {
-  const MainHomeScreen({Key? key}) : super(key: key);
+class MainScreenGreece extends StatelessWidget {
+  const MainScreenGreece({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class MainHomeScreen extends StatelessWidget {
         child: Stack(
           children: [
             Image.asset(
-              'assets/images/pyramids.jpeg',
+              'assets/images/greece_03.jpg',
               fit: BoxFit.cover,
               width: double.infinity,
               height: double.infinity,
@@ -33,39 +34,38 @@ class MainHomeScreen extends StatelessWidget {
                       height: 30,
                     ),
                     Row(
-                      children: const [
-                        CircleAvatar(
-                          backgroundColor: Colors.grey,
-                          radius: 20,
-                          child: Icon(
-                            Icons.blur_linear_sharp,
-                            color: Colors.white60,
-                          ),
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children:  [
+                        Row(
+                          children: const [
+                            CircleAvatar(
+                              backgroundColor: Colors.grey,
+                              radius: 20,
+                              child: Icon(
+                                Icons.blur_linear_sharp,
+                                color: Colors.white60,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            CircleAvatar(
+                              backgroundImage: AssetImage('assets/images/greece.png'),
+                              radius: 20,
+                            ),
+                          ],
                         ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThGJ6mjIRbXccAd6gQxPWBYf92YiuWSjBrDw&usqp=CAU'),
-                          radius: 20,
-                        ),
-                        SizedBox(
-                          width: 70,
-                        ),
-                        Text(
+
+                        const Text(
                           'Home',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 25,
                               fontWeight: FontWeight.w600),
                         ),
-                        SizedBox(
-                          width: 100,
-                        ),
-                        CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://pps.whatsapp.net/v/t61.24694-24/299300472_2895199004119361_4712110308261876665_n.jpg?ccb=11-4&oh=01_AVxslGKVm4JawQ024JHybbZTI16zE_DjAeHEbZz_z1_Q8A&oe=63500E36'),
+
+                        const CircleAvatar(
+                          backgroundImage: AssetImage('assets/images/es.jpg'),
                           radius: 20,
                         ),
                       ],
@@ -77,18 +77,24 @@ class MainHomeScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 20.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
-                          Text(
+                        children: [
+                          const Text(
                             "Top Views",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold),
                           ),
-                          Text(
-                            "See all",
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 14.0),
+                          GestureDetector(
+                            onTap: ()
+                            {
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>const TourismGreece()));
+                            },
+                            child: const Text(
+                              "See all",
+                              style:
+                              TextStyle(color: Colors.white, fontSize: 14.0),
+                            ),
                           )
                         ],
                       ),
@@ -109,78 +115,8 @@ class MainHomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                               child: Stack(alignment: Alignment.bottomCenter,
                                   children: [
-                                Image.asset('assets/images/pyramids.jpeg',
-                                    fit: BoxFit.cover,height: 210,),
-                                PhotoShadowSmStyle(),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 7.0, vertical: 14.0),
-                                  child: Center(
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                       const SizedBox(height: 55.0,),
-                                        const CircleAvatar(
-                                          backgroundColor:
-                                              Color.fromRGBO(255, 255, 255, .7),
-                                          child: Icon(
-                                            Icons.play_arrow,
-                                            color: Colors.orangeAccent,
-                                          ),
-                                        ),
-                                        const SizedBox(
-                                          height: 40.0,
-                                        ),
-                                        Row(
-                                          children: [
-                                            const CircleAvatar(
-                                              backgroundImage: NetworkImage(
-                                                  'https://pps.whatsapp.net/v/t61.24694-24/299300472_2895199004119361_4712110308261876665_n.jpg?ccb=11-4&oh=01_AVxslGKVm4JawQ024JHybbZTI16zE_DjAeHEbZz_z1_Q8A&oe=63500E36'),
-                                              radius: 15,
-                                            ),
-                                            Column(
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              crossAxisAlignment: CrossAxisAlignment.center,
-                                              children: const [
-                                                Text(
-                                                  'Mohamed Hamza',
-                                                  style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontWeight:FontWeight.w500,
-                                                      fontSize: 13.0),
-                                                ),
-                                                SizedBox(
-                                                  height: 6.0,
-                                                ),
-                                                Text(
-                                                  '180 ',
-                                                  style: TextStyle(
-                                                      color: Colors.orangeAccent,
-                                                      fontSize: 14.0),
-                                                )
-                                              ],
-                                            )
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ]),
-                            ),
-                          ),
-                          const SizedBox(width: 10,),
-                          SizedBox(
-                            width: 160,
-                            height: 210,
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Stack(alignment: Alignment.bottomCenter,
-                                  children: [
-                                    Image.asset('assets/images/karnak.jpg',
-                                        fit: BoxFit.cover,height: 210,),
+                                    Image.asset('assets/images/greece_02.jpg',
+                                      fit: BoxFit.cover,height: 210,),
                                     PhotoShadowSmStyle(),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
@@ -206,8 +142,7 @@ class MainHomeScreen extends StatelessWidget {
                                             Row(
                                               children: [
                                                 const CircleAvatar(
-                                                  backgroundImage: NetworkImage(
-                                                      'https://pps.whatsapp.net/v/t61.24694-24/299300472_2895199004119361_4712110308261876665_n.jpg?ccb=11-4&oh=01_AVxslGKVm4JawQ024JHybbZTI16zE_DjAeHEbZz_z1_Q8A&oe=63500E36'),
+                                                  backgroundImage: AssetImage('assets/images/es.jpg'),
                                                   radius: 15,
                                                 ),
                                                 Column(
@@ -215,7 +150,7 @@ class MainHomeScreen extends StatelessWidget {
                                                   crossAxisAlignment: CrossAxisAlignment.center,
                                                   children: const [
                                                     Text(
-                                                      'Mohamed Hamza',
+                                                      'Esraa Mohamed',
                                                       style: TextStyle(
                                                           color: Colors.white,
                                                           fontWeight:FontWeight.w500,
@@ -249,8 +184,8 @@ class MainHomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                               child: Stack(alignment: Alignment.bottomCenter,
                                   children: [
-                                    Image.asset('assets/images/abosimple.jpeg',
-                                        fit: BoxFit.cover,height: 210,),
+                                    Image.asset('assets/images/greece_04.jpg',
+                                      fit: BoxFit.cover,height: 210,),
                                     PhotoShadowSmStyle(),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
@@ -276,8 +211,7 @@ class MainHomeScreen extends StatelessWidget {
                                             Row(
                                               children: [
                                                 const CircleAvatar(
-                                                  backgroundImage: NetworkImage(
-                                                      'https://pps.whatsapp.net/v/t61.24694-24/299300472_2895199004119361_4712110308261876665_n.jpg?ccb=11-4&oh=01_AVxslGKVm4JawQ024JHybbZTI16zE_DjAeHEbZz_z1_Q8A&oe=63500E36'),
+                                                  backgroundImage: AssetImage('assets/images/es.jpg'),
                                                   radius: 15,
                                                 ),
                                                 Column(
@@ -285,7 +219,7 @@ class MainHomeScreen extends StatelessWidget {
                                                   crossAxisAlignment: CrossAxisAlignment.center,
                                                   children: const [
                                                     Text(
-                                                      'Mohamed Hamza',
+                                                      'Esraa Mohamed',
                                                       style: TextStyle(
                                                           color: Colors.white,
                                                           fontWeight:FontWeight.w500,
@@ -319,8 +253,8 @@ class MainHomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                               child: Stack(alignment: Alignment.bottomCenter,
                                   children: [
-                                    Image.asset('assets/images/cairotwer.jpeg',
-                                        fit: BoxFit.cover,width: 160,),
+                                    Image.asset('assets/images/greece_01.jpg',
+                                      fit: BoxFit.cover,height: 210,),
                                     PhotoShadowSmStyle(),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
@@ -346,8 +280,7 @@ class MainHomeScreen extends StatelessWidget {
                                             Row(
                                               children: [
                                                 const CircleAvatar(
-                                                  backgroundImage: NetworkImage(
-                                                      'https://pps.whatsapp.net/v/t61.24694-24/299300472_2895199004119361_4712110308261876665_n.jpg?ccb=11-4&oh=01_AVxslGKVm4JawQ024JHybbZTI16zE_DjAeHEbZz_z1_Q8A&oe=63500E36'),
+                                                  backgroundImage: AssetImage('assets/images/es.jpg'),
                                                   radius: 15,
                                                 ),
                                                 Column(
@@ -355,7 +288,76 @@ class MainHomeScreen extends StatelessWidget {
                                                   crossAxisAlignment: CrossAxisAlignment.center,
                                                   children: const [
                                                     Text(
-                                                      'Mohamed Hamza',
+                                                      'Esraa Mohamed',
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontWeight:FontWeight.w500,
+                                                          fontSize: 13.0),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 6.0,
+                                                    ),
+                                                    Text(
+                                                      '180 ',
+                                                      style: TextStyle(
+                                                          color: Colors.orangeAccent,
+                                                          fontSize: 14.0),
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ]),
+                            ),
+                          ),
+                          const SizedBox(width: 10,),
+                          SizedBox(
+                            width: 160,
+                            height: 210,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Stack(alignment: Alignment.bottomCenter,
+                                  children: [
+                                    Image.asset('assets/images/greece_01.jpg',
+                                      fit: BoxFit.cover,height: 210,),
+                                    PhotoShadowSmStyle(),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 7.0, vertical: 14.0),
+                                      child: Center(
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            const SizedBox(height: 55.0,),
+                                            const CircleAvatar(
+                                              backgroundColor:
+                                              Color.fromRGBO(255, 255, 255, .7),
+                                              child: Icon(
+                                                Icons.play_arrow,
+                                                color: Colors.orangeAccent,
+                                              ),
+                                            ),
+                                            const SizedBox(
+                                              height: 40.0,
+                                            ),
+                                            Row(
+                                              children: [
+                                                const CircleAvatar(
+                                                  backgroundImage: AssetImage('assets/images/es.jpg'),
+                                                  radius: 15,
+                                                ),
+                                                Column(
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                                  children: const [
+                                                    Text(
+                                                      'Esraa Mohamed',
                                                       style: TextStyle(
                                                           color: Colors.white,
                                                           fontWeight:FontWeight.w500,
@@ -422,12 +424,12 @@ class MainHomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                               child: Stack(
                                   children: [
-                                    Image.asset('assets/images/alex.jpeg',
+                                    Image.asset('assets/images/greece_01.jpg',
                                       fit: BoxFit.cover,width: double.infinity,height: 200,),
                                     PhotoShadowmnStyle(),
                                     const Padding(
                                       padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                      child: Text('Alexanderia',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                      child: Text('Beautiful Greece',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
                                     ),
                                   ]),
                             ),
@@ -440,12 +442,12 @@ class MainHomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                               child: Stack(
                                   children: [
-                                    Image.asset('assets/images/matrouh.jpeg',
+                                    Image.asset('assets/images/greece_01.jpg',
                                       fit: BoxFit.cover,width: double.infinity,height: 200,),
                                     PhotoShadowmnStyle(),
                                     const Padding(
                                       padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                      child: Text('Matrouh',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                      child: Text('Beautiful Greece',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
                                     ),
                                   ]),
                             ),
@@ -458,12 +460,12 @@ class MainHomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                               child: Stack(
                                   children: [
-                                    Image.asset('assets/images/dahab.jpeg',
+                                    Image.asset('assets/images/greece_01.jpg',
                                       fit: BoxFit.cover,width: double.infinity,height: 200,),
                                     PhotoShadowmnStyle(),
                                     const Padding(
                                       padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                      child: Text('Dahab',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                      child: Text('Beautiful Greece',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
                                     ),
                                   ]),
                             ),
@@ -476,12 +478,12 @@ class MainHomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                               child: Stack(
                                   children: [
-                                    Image.asset('assets/images/khan.jpeg',
+                                    Image.asset('assets/images/greece_01.jpg',
                                       fit: BoxFit.cover,width: double.infinity,height: 200,),
                                     PhotoShadowmnStyle(),
                                     const Padding(
                                       padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                      child: Text('Khan ElKhalely',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                      child: Text('Beautiful Greece',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
                                     ),
                                   ]),
                             ),
@@ -494,12 +496,12 @@ class MainHomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                               child: Stack(
                                   children: [
-                                    Image.asset('assets/images/azharb.jpeg',
+                                    Image.asset('assets/images/greece_01.jpg',
                                       fit: BoxFit.cover,width: double.infinity,height: 200,),
                                     PhotoShadowmnStyle(),
                                     const Padding(
                                       padding: EdgeInsets.symmetric(horizontal: 17.0,vertical: 80.0),
-                                      child: Text('AlAzhar Bark',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
+                                      child: Text('Beautiful Greece',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w600),),
                                     ),
                                   ]),
                             ),

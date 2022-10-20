@@ -1,10 +1,13 @@
+
+
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:travel_app/modules/france/screen_france_2.dart';
 
 // ignore: camel_case_types
-class project3 extends StatelessWidget {
-  const project3({Key? key}) : super(key: key);
+class ScreenFrance extends StatelessWidget {
+  const ScreenFrance({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +17,7 @@ class project3 extends StatelessWidget {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/images/pyra.jpg"),
+                image: AssetImage("assets/images/france_01.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -52,7 +55,7 @@ class project3 extends StatelessWidget {
                     fontSize: 50.0),
               ),
               Text(
-                'you in egypt',
+                'you in France',
                 style: TextStyle(color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 50.0),
@@ -75,7 +78,17 @@ class project3 extends StatelessWidget {
               children: [
                 Transform.rotate(
                   angle: 270 * pi/180,
-                  child: const Icon(Icons.double_arrow_sharp,color: Colors.white,size: 60.0,),
+                  child:  IconButton(
+                    color: Colors.white,
+                    onPressed: ()
+                    {
+                      Navigator.push(context,MaterialPageRoute(builder: (context)=>const MainScreenFrance(),));
+                    },
+                    icon: const Icon(
+                      Icons.double_arrow_sharp,
+                      size: 60.0,
+                    ),
+                  ),
 
                 ),
                 const SizedBox(height: 30.0,),// Icon(Icons.double_arrow_sharp,transform: Matrix4.rotationY(math.pi), size: 40.0,color: Colors.white,),

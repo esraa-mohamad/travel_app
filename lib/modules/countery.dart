@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/componants/componants.dart';
+import 'package:travel_app/modules/egypt/project3.dart';
+import 'package:travel_app/modules/egypt/tourism.dart';
+import 'package:travel_app/modules/france/screen-france_1.dart';
+import 'package:travel_app/modules/greece/screen_greece_1.dart';
+
+import 'egypt/mainHomeScreen.dart';
 
 class SelectCountry extends  StatelessWidget {
   const SelectCountry({Key? key}) : super(key: key);
@@ -31,750 +38,210 @@ class SelectCountry extends  StatelessWidget {
                 children: [
                   Column(
                     children:
-                    const[
-                      Text(
-                        'A',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'B',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'C',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'D',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'E',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'F',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'G',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'H',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'I',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'J',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'K',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'L',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'M',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'N',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'O',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'P',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'Q',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'R',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'S',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'T',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'U',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'V',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'W',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'X',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'Y',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      Text(
-                        'Z',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.deepOrangeAccent
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: 
                     [
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                         border: Border.all(
-                           color:Colors.orangeAccent,
-                           width: 2,
-                         ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      ABC(abc: 'A'),
                       const SizedBox(
-                        height: 15,
+                        height: 8,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      ABC(abc: 'B'),
                       const SizedBox(
-                        height: 15,
+                        height: 8,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      ABC(abc: 'C'),
                       const SizedBox(
-                        height: 15,
+                        height: 8,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      ABC(abc: 'D'),
                       const SizedBox(
-                        height: 15,
+                        height: 8,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      ABC(abc: 'E'),
                       const SizedBox(
-                        height: 15,
+                        height: 8,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      ABC(abc: 'F'),
                       const SizedBox(
-                        height: 15,
+                        height: 8,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      ABC(abc: 'G'),
                       const SizedBox(
-                        height: 15,
+                        height: 8,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
+                      ABC(abc: 'H'),
+                      const SizedBox(
+                        height: 8,
                       ),
+                      ABC(abc: 'I'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'J'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'K'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'L'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'M'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'N'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'O'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'P'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'Q'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'R'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'S'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'T'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'U'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'V'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'W'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'X'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'Y'),
+                      const SizedBox(
+                        height: 8,
+                      ),
+                      ABC(abc: 'Z'),
                     ],
                   ),
                   Column(
                     children:
                     [
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/egypt.jpg', page: const project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/egypt.jpg', page: const project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/egypt.jpg', page: const project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/egypt.jpg', page: const project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/egypt.jpg', page: const project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/egypt.jpg', page: const project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/egypt.jpg', page: const project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/egypt.jpg', page: const project3()),
                     ],
                   ),
                   Column(
                     children:
                     [
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/france.jpg', page: const ScreenFrance()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/france.jpg', page: const ScreenFrance()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/france.jpg', page: const ScreenFrance()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/france.jpg', page: const ScreenFrance()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/france.jpg', page: const ScreenFrance()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/france.jpg', page: const ScreenFrance()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      flag(context, imagePath: 'assets/images/france.jpg', page: const ScreenFrance()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                            color:Colors.orangeAccent,
-                            width: 2,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
+                      flag(context, imagePath: 'assets/images/france.jpg', page: const ScreenFrance()),
+                    ],
+                  ),
+                  Column(
+                    children:
+                    [
+                      flag(context, imagePath: 'assets/images/greece.png', page: const ScreenGreece()),
+                      const SizedBox(
+                        height: 15,
                       ),
+                      flag(context, imagePath: 'assets/images/greece.png', page: const ScreenGreece()),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      flag(context, imagePath: 'assets/images/greece.png', page: const ScreenGreece()),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      flag(context, imagePath: 'assets/images/greece.png', page: const ScreenGreece()),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      flag(context, imagePath: 'assets/images/greece.png', page: const ScreenGreece()),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      flag(context, imagePath: 'assets/images/greece.png', page: const ScreenGreece()),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      flag(context, imagePath: 'assets/images/greece.png', page: const ScreenGreece()),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      flag(context, imagePath: 'assets/images/greece.png', page: const ScreenGreece()),
                     ],
                   ),
                 ],

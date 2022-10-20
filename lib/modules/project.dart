@@ -21,11 +21,9 @@ class _projectState extends State<project> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-
             children: [
               Image.asset('assets/images/clar.png', height: 350.0,width: 500.0,),
-              const SizedBox(height: 50,),
-
+              const SizedBox(height: 20,),
               const Text(
 
                 'Be the Reviewer and share with people your good experience of any place you visited',
@@ -54,11 +52,11 @@ class _projectState extends State<project> {
                   ),
                 ),
               ),
-              const SizedBox(height: 130.0,),
+              const SizedBox(height: 30.0,),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const Text('Skip',textAlign: TextAlign.start,
 
@@ -69,7 +67,7 @@ class _projectState extends State<project> {
                         fontWeight: FontWeight.bold,
                       ) ,
                     ),
-                    const SizedBox(width: 140.0,),
+
 
                     defaulttButton(
                         icon: Icons.arrow_forward,width: 100.0,

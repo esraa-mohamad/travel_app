@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/componants/componants.dart';
-import 'package:travel_app/modules/project3.dart';
+import 'package:travel_app/modules/LoginScreen.dart';
+import 'package:travel_app/modules/egypt/project3.dart';
+
+import 'countery.dart';
 
 // ignore: camel_case_types, must_be_immutable
 class project2 extends StatefulWidget {
@@ -137,7 +140,7 @@ class _project2State extends State<project2> {
                       {
                         Navigator.push(context,
                             MaterialPageRoute(
-                              builder: (context)=>const project3(),
+                              builder: (context)=>const SelectCountry(),
                             ));
                       }
                     },
@@ -185,7 +188,14 @@ class _project2State extends State<project2> {
                 ),
                 const SizedBox(height: 30,),
                 const Text('Already have account?',style: TextStyle(color: Colors.orange,fontSize: 20.0,fontWeight: FontWeight.bold,),),
-                const Text('log in',style: TextStyle(color: Colors.orange, decoration: TextDecoration.underline,fontSize: 20.0,fontWeight: FontWeight.bold,),),
+                TextButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=> LoginScreenTravel()),
+                      );
+                    }, child: const Text('Sign in',style: TextStyle(
+                    color: Colors.orangeAccent,fontSize: 18.0,decoration: TextDecoration.underline
+                ),)),
               ],
 
             ),

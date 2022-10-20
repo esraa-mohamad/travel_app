@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:travel_app/modules/HomeScreen.dart';
+import 'package:travel_app/modules/countery.dart';
+import 'package:travel_app/modules/project2.dart';
 
 import '../componants/componants.dart';
 
@@ -18,6 +20,16 @@ class LoginScreenTravel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading:  IconButton(
+            onPressed: (){
+              Navigator.pop(context);
+            },
+            icon:const Icon(Icons.arrow_back_ios,color: Colors.orangeAccent,)),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: SingleChildScrollView(
@@ -119,7 +131,7 @@ class LoginScreenTravel extends StatelessWidget {
                           {
                             Navigator.push(context,
                                 MaterialPageRoute(
-                                  builder: (context)=>const HomeScreen(),
+                                  builder: (context)=>const SelectCountry(),
                                 ));
                           }
                         },
@@ -150,7 +162,8 @@ class LoginScreenTravel extends StatelessWidget {
                     ),
                     const SizedBox(
                       height: 35.0,
-                    ),Row(
+                    ),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children:[
                         Image.asset('assets/images/WhatsApp Image 2022-10-05 at 3.01.54 AM.jpeg',width: 60.0,height: 60.0,),
@@ -158,8 +171,7 @@ class LoginScreenTravel extends StatelessWidget {
                        const Icon(Icons.facebook,color: Colors.orangeAccent,size: 60.0),
 
                       ],
-                    )
-                    ,
+                    ),
                     Column(
                       mainAxisAlignment:MainAxisAlignment.center ,
                       children: [
@@ -171,9 +183,13 @@ class LoginScreenTravel extends StatelessWidget {
                           ),
                         ),
                         TextButton(
-                            onPressed: () {}, child: const Text('Sign Up',style: TextStyle(
+                            onPressed: () {
+                              Navigator.push(context,
+                                MaterialPageRoute(builder: (context)=>const project2()),
+                              );
+                            }, child: const Text('Sign Up',style: TextStyle(
                           color: Colors.orangeAccent,fontSize: 18.0,decoration: TextDecoration.underline
-                        ),))
+                        ),)),
                       ],
                     ),
 

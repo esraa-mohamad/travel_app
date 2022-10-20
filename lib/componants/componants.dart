@@ -159,21 +159,35 @@ Widget ABC ({
   ),
 );
 
-Widget flag (
+Widget flag (context,
 {
   required String imagePath,
+  required Widget  page ,
 }
-    )=>Container(
-  width: 80,
-  height: 80,
-  decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(25),
-    color: Colors.orangeAccent,
-  ),
-  child: Padding(
-    padding: const EdgeInsets.all(5.0),
-    child: ClipRRect(
-        borderRadius: BorderRadius.circular(25),
-        child: Image.asset(imagePath)),
+    )=> GestureDetector(
+  onTap: ()
+  {
+    Navigator.push(context,
+      MaterialPageRoute(builder:
+          (context)=>page,
+      ),
+    );
+  },
+  child: Container(
+    width: 80,
+    height: 80,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(25),
+      border: Border.all(
+        color:Colors.orangeAccent,
+        width: 2,
+      ),
+    ),
+    child: Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: ClipRRect(
+          borderRadius: BorderRadius.circular(25),
+          child: Image.asset(imagePath)),
+    ),
   ),
 );

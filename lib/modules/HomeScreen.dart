@@ -31,9 +31,6 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
-             const SizedBox(
-                height: 35,
-              ),
               Row(
                 children: [
                  const  SizedBox(width: 85.0),
@@ -71,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   fontSize: 25,fontWeight:FontWeight.w500,color: Colors.orangeAccent),textAlign:TextAlign.center,
               ),
               const SizedBox(
-                height: 80.0,
+                height: 50.0,
               ),
               Center(
                 child: Row(
@@ -95,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(
-                height: 100.0,
+                height: 60.0,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
